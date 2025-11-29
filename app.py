@@ -689,16 +689,20 @@ def main():
         st.plotly_chart(fig_m, use_container_width=True)
 
     # --- Footer ---
-    st.markdown("---")
     st.markdown(
         """
         <style>
         .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: var(--background-color);
+            color: var(--text-color);
             text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-            border-top: 1px solid #e6e6e6;
-            color: #555;
+            padding: 10px;
+            border-top: 1px solid var(--secondary-background-color);
+            z-index: 1000;
         }
         .footer a {
             text-decoration: none;
