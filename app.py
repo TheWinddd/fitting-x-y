@@ -382,10 +382,10 @@ def main():
     # --- Sidebar: cấu hình mô hình ---
     st.sidebar.header("⚙️ Cài đặt mô hình cơ bản")
 
-    use_linear = st.sidebar.checkbox("Hàm tuyến tính (y = a·x + b)", value=True)
+    use_linear = st.sidebar.checkbox("Hàm tuyến tính (y = a·x + b)", value=False)
 
     # Đa thức: tự động chạy từ bậc min -> max
-    use_poly = st.sidebar.checkbox("Hàm đa thức (y = aₙxⁿ + … + a₀)", value=True)
+    use_poly = st.sidebar.checkbox("Hàm đa thức (y = aₙxⁿ + … + a₀)", value=False)
     if use_poly:
         st.sidebar.markdown("**Khoảng bậc đa thức**")
         poly_min_deg = st.sidebar.number_input(
@@ -397,14 +397,14 @@ def main():
     else:
         poly_min_deg, poly_max_deg = 2, 2
 
-    use_exp = st.sidebar.checkbox("Hàm mũ (y = a·e^{b·x})", value=True)
+    use_exp = st.sidebar.checkbox("Hàm mũ (y = a·e^{b·x})", value=False)
     use_log = st.sidebar.checkbox("Hàm logarit (y = a·ln(x) + b)", value=False)
     use_power = st.sidebar.checkbox("Hàm lũy thừa (y = a·x^b)", value=False)
 
     st.sidebar.markdown("---")
     st.sidebar.subheader("✨ Logarit đa thức tổng quát")
     use_log_poly = st.sidebar.checkbox(
-        "Hàm logarit đa thức: y = log₍base₎(Pₙ(x))", value=True
+        "Hàm logarit đa thức: y = log₍base₎(Pₙ(x))", value=False
     )
     if use_log_poly:
         log_poly_base = st.sidebar.number_input(
@@ -449,14 +449,14 @@ def main():
         st.subheader("Giá trị x")
         x_text = st.text_area(
             "Danh sách x",
-            "-4\n-3\n-2\n-1\n-0.5\n3\n4\n5\n6\n7",
+            "",
             height=160,
         )
     with col2:
         st.subheader("Giá trị y")
         y_text = st.text_area(
             "Danh sách y tương ứng",
-            "2.892789\n2.464974\n1.892789\n1.0\n0.203114\n1.0\n1.892789\n2.464974\n2.892789\n3.236217",
+            "",
             height=160,
         )
 
