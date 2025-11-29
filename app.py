@@ -688,6 +688,38 @@ def main():
         )
         st.plotly_chart(fig_m, use_container_width=True)
 
+    # --- Footer ---
+    st.markdown("---")
+    st.markdown(
+        """
+        <style>
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 1px solid #e6e6e6;
+            color: #555;
+        }
+        .footer a {
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+        .footer a.facebook { color: #1877F2; }
+        .footer a.youtube { color: #FF0000; }
+        .footer a:hover { opacity: 0.8; }
+        </style>
+        <div class="footer">
+            <p>© 2025 <b>Văn Quân Bùi</b>. All rights reserved.</p>
+            <p>
+                <a class="facebook" href="https://www.facebook.com/Thewind1104" target="_blank">Facebook</a>
+                <a class="youtube" href="https://www.youtube.com/@thewind2002" target="_blank">Youtube</a>
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
 
 if __name__ == "__main__":
     main()
