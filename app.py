@@ -375,8 +375,8 @@ def main():
     st.set_page_config(page_title="Fitting hàm số từ dữ liệu x–y", layout="wide")
     st.title("🔢 Fitting hàm số từ dữ liệu x – y")
     st.write(
-        "Nhập các giá trị **x** và **y** tương ứng. Ứng dụng sẽ thử nhiều dạng hàm số, "
-        "hiển thị **phương trình**, **R²** và **biểu đồ tương tác**."
+        "Nhập các giá trị **x** và **y** tương ứng. **Lưu ý: Nhập mỗi giá trị trên một dòng mới.** "
+        "Ứng dụng sẽ thử nhiều dạng hàm số, hiển thị **phương trình**, **R²** và **biểu đồ tương tác**."
     )
 
     # --- Sidebar: cấu hình mô hình ---
