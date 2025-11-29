@@ -380,7 +380,7 @@ def main():
         <style>
         .main .block-container {
             min-height: calc(100vh - 200px);
-            padding-bottom: 80px;
+            padding-bottom: 5px;
         }
         </style>
         """,
@@ -709,12 +709,12 @@ def main():
         <style>
         .footer {
             text-align: center;
-            padding: 20px 10px;
-            margin-top: 40px;
+            padding: 5px 10px;
+            margin-top: 100px;
             color: var(--text-color);
         }
         .footer p {
-            margin: 5px 0;
+            margin: 1px 0;
         }
         .footer a {
             text-decoration: none;
