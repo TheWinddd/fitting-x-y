@@ -373,6 +373,20 @@ else:
 
 def main():
     st.set_page_config(page_title="Fitting hàm số từ dữ liệu x–y", layout="wide")
+    
+    # CSS để đẩy footer xuống đáy màn hình
+    st.markdown(
+        """
+        <style>
+        .main .block-container {
+            min-height: calc(100vh - 200px);
+            padding-bottom: 80px;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    
     st.title("🔢 Fitting hàm số từ dữ liệu x – y")
     st.write(
         "Nhập các giá trị **x** và **y** tương ứng. **Lưu ý: Nhập mỗi giá trị trên một dòng mới.** "
